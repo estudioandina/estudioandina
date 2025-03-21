@@ -240,3 +240,8 @@ redes-sociales a:hover {
 .notificacion.cerrando {
     opacity: 0;
 }
+
+.hidden-header {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}

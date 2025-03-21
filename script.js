@@ -89,3 +89,20 @@ function enviarPedidoWhatsApp() {
     let url = `https://wa.me/${numero}?text=${mensaje}`;
     window.open(url, "_blank");
 }
+
+let lastScrollTop = 0;
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+    let scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+        // Scroll hacia abajo, oculta el header
+        header.classList.add("hidden-header");
+    } else {
+        // Scroll hacia arriba, muestra el header
+        header.classList.remove("hidden-header");
+    }
+
+    lastScrollTop = scrollTop;
+});
