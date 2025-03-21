@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andina - Tienda de Fotografía</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://files.oaiusercontent.com/file-7eCtkREV7Bsq8fnfdX1SV8?se=2025-03-20T17%3A25%3A03Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Df4f74d76-b779-4a4d-90bf-58067f6eed01.webp&sig=1reWS8nFJkhwLSev5%2B6iGiEZbPa4wZIRfu4Iprc%2BXmM%3D">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-izquierda">
+                <li><a href="#" onclick="mostrarSeccion('tienda')">Tienda</a></li>
+                <li><a href="#" onclick="mostrarSeccion('contacto')">Contacto</a></li>
+            </ul>
+            <h1 onclick="mostrarSeccion('inicio')">Andina</h1>
+            <ul class="nav-derecha">
+                <li><a href="#" onclick="toggleRedes()">📱</a></li>
+                <li><a href="#" onclick="mostrarSeccion('carrito')">🛒</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="seccion activa">
+        <h2>Bienvenido a Andina</h2>
+        <p>Capturamos tus momentos especiales y los enmarcamos con calidad y estilo. En Estudio Andina, transformamos tus fotografías en piezas de arte para decorar tu hogar.</p>
+        <img src="https://img.freepik.com/foto-gratis/circulo-cristal-brillante-iluminado-flash-camara-generado-ia_188544-34258.jpg" alt="Fotografía enmarcada" style="width: 100%; max-width: 600px; border-radius: 10px; margin-top: 20px;">
+    </section>
+
+    <section id="tienda" class="seccion">
+        <h2>Nuestros Productos</h2>
+        <p>Explora nuestra colección de marcos y servicios de impresión de alta calidad.</p>
+        <div class="galeria">
+            <div class="producto">
+                <img src="https://i.imgur.com/Bn07nxq.jpeg" alt="Foto enmarcada 1">
+                <p>🖼️ Enmarcaciones con vidrio antireflejo</p>
+                <p>Diplomas de todo tipo</p>
+                <button onclick="agregarAlCarrito('Enmarcaciones con vidrio antireflejo')">🛒 Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="https://i.imgur.com/ZFSoB0I.jpeg" alt="Foto enmarcada 2">
+                <p>🖼️ Collages</p>
+                <p>Collage bebé primer año</p>
+                <button onclick="agregarAlCarrito('Collages')">🛒 Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="https://i.imgur.com/X8894TS.jpeg" alt="Foto enmarcada 3">
+                <p>🖼️ Enmarcación de fotos con moldura importada</p>
+                <p>Fotos de 15 años</p>
+                <button onclick="agregarAlCarrito('Enmarcación con moldura importada')">🛒 Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="https://i.imgur.com/UQgUQQw.jpeg" alt="Foto enmarcada 4">
+                <p>🖼️ Fotografías en retablo</p>
+                <p>Retablo completamente lavable</p>
+                <button onclick="agregarAlCarrito('Fotografías en retablo')">🛒 Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="https://i.imgur.com/M84Csam.jpeg" alt="Foto enmarcada 5">
+                <p>📸 Fotos para eventos</p>
+                <p>Se toman fotos para todo tipo de eventos</p>
+                <button onclick="agregarAlCarrito('Fotos para eventos')">🛒 Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="https://i.imgur.com/A3N2c6W.jpeg" alt="Foto enmarcada 6">
+                <p>🖼️ Venta de retablos</p>
+                <p>Retablo para fotos o póster</p>
+                <button onclick="agregarAlCarrito('Venta de retablos')">🛒 Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="https://i.imgur.com/EVCCh5j.jpeg" alt="Foto enmarcada 7">
+                <p>🔑 Llaveros</p>
+                <p>Llaveros con cualquier foto</p>
+                <button onclick="agregarAlCarrito('Llaveros personalizados')">🛒 Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="https://i.imgur.com/OcSP7jF.jpeg" alt="Foto enmarcada 8">
+                <p>📸 Fotos de matrimonio</p>
+                <p>También fotos de embarazada</p>
+                <button onclick="agregarAlCarrito('Fotos de matrimonio')">🛒 Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="https://i.imgur.com/bzmAH7K.jpeg" alt="Foto enmarcada 9">
+                <p>📸 Paisajes</p>
+                <p>Fotos de todo tipo de paisajes</p>
+                <button onclick="agregarAlCarrito('Fotos de paisajes')">🛒 Agregar al carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="seccion">
+        <h2>Contacto</h2>
+        <p>📞 Teléfono: +57 321 4473110</p>
+        <p>📧 Email: jhofer0104@gmail.com</p>
+        <p>Si tienes alguna consulta o deseas realizar un pedido personalizado, no dudes en contactarnos.</p>
+    </section>
+
+    <section id="carrito" class="seccion">
+        <h2>Carrito de Compras</h2>
+        <p>Aquí aparecerán los productos seleccionados.</p>
+        <div class="carrito-contenido">
+            <p>Tu carrito está vacío. Explora nuestra tienda y agrega tus productos favoritos.</p>
+            <button onclick="mostrarSeccion('tienda')">Ir a la Tienda</button>
+            <button onclick="enviarPedidoWhatsApp()">🛒 Finalizar Compra</button>
+        </div>
+    </section>
+
+    <div id="redes" class="redes-sociales">
+        <a href="https://wa.me/573214473110" target="_blank">💬 Whatsapp</a>
+    </div>
+</body>
+</html>
+
