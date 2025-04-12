@@ -245,3 +245,25 @@ redes-sociales a:hover {
     transform: translateY(-100%);
     transition: transform 0.3s ease-in-out;
 }
+
+.galeria-trabajo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+  }
+  
+  .galeria-trabajo img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.2);
+    transition: transform 0.3s;
+  }
+  
+  .galeria-trabajo img:hover {
+    transform: scale(1.05);
+  }
+  

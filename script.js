@@ -71,7 +71,7 @@ function mostrarNotificacion(mensaje) {
 
 // Enviar pedido a WhatsApp
 function enviarPedidoWhatsApp() {
-    const numero = "573127745674";
+    const numero = "573214473110";
 
     if (carrito.length === 0) {
         mostrarNotificacion("⚠️ No tienes productos en el carrito");
