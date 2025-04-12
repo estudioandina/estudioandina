@@ -63,15 +63,14 @@ function mostrarNotificacion(mensaje) {
     document.body.appendChild(notificacion);
 
     setTimeout(() => {
-        notificacion.classList.add("cerrando"); // Agrega clase para animación de cierre
+        notificacion.classList.add("cerrando");
         setTimeout(() => notificacion.remove(), 500);
     }, 1000);
 }
 
-
 // Enviar pedido a WhatsApp
 function enviarPedidoWhatsApp() {
-    const numero = "573214473110";
+    const numero = "573214473110"; // ✅ Número actualizado
 
     if (carrito.length === 0) {
         mostrarNotificacion("⚠️ No tienes productos en el carrito");
@@ -90,6 +89,7 @@ function enviarPedidoWhatsApp() {
     window.open(url, "_blank");
 }
 
+// Ocultar/mostrar header al hacer scroll
 let lastScrollTop = 0;
 const header = document.querySelector("header");
 
@@ -97,10 +97,8 @@ window.addEventListener("scroll", () => {
     let scrollTop = window.scrollY || document.documentElement.scrollTop;
 
     if (scrollTop > lastScrollTop) {
-        // Scroll hacia abajo, oculta el header
         header.classList.add("hidden-header");
     } else {
-        // Scroll hacia arriba, muestra el header
         header.classList.remove("hidden-header");
     }
 

@@ -154,7 +154,7 @@ nav a:hover {
     transition: background 0.3s, transform 0.2s;
 }
 
-redes-sociales a:hover {
+.redes-sociales a:hover {
     background: gold;
     color: black;
     transform: scale(1.1);
